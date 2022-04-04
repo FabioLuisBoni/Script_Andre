@@ -18,7 +18,7 @@ func main() {
 		nameTrimed := strings.Trim(files[fileIndex], ".csv\n")
 		nameSliced := strings.Split(nameTrimed, "_")
 
-		file, reader := filestreatment.OpenFile(dataPath, files[fileIndex])
+		file, reader := filestreatment.OpenFile(dataPath+"TableData/", files[fileIndex])
 		for {
 			var data []string
 
